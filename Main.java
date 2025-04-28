@@ -6,8 +6,9 @@ public static void main(String[]args){
 Puzzle game = new Puzzle();
 
   while(7==7){
+      game.newGame();
     System.out.println("Please enter your guess");
-    game.newGame();
+    
     String me = x.next();
     game.Guess(me);
     while(!me.equals(game.getWord())){
