@@ -34,7 +34,9 @@ public String Guess(String guess){
   return tot;
 }
 
-
+public String getWord(){
+  return puzzleWord;
+}
 
 
   
