@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
-
-Public static void main(String[]args){
+public class Main{
+public static void main(String[]args){
   Scanner x = new Scanner(System.in);
 Puzzle game = new Puzzle();
 
@@ -12,10 +12,10 @@ Puzzle game = new Puzzle();
     game.Guess(me);
     while(!me.equals(game.getWord())){
       me = x.next();
-      game.Guess(me)
+      game.Guess(me);
     }
     System.out.println("Congrats! You guessed the word!");
-    System.out.println("Would you like to play again? Y or N")
+    System.out.println("Would you like to play again? Y or N");
     if(!x.next().toLowerCase().equals("y")){
       break;
     }
@@ -23,4 +23,5 @@ Puzzle game = new Puzzle();
     
   }
   
+}
 }
