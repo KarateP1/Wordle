@@ -3,19 +3,19 @@ public class Puzzle{
   private String[] word;
   private String puzzleWord;
 public Puzzle(){
-  word = new String[]{words.split(" | ")};  
+  word = words.split(" | ");  
   }
 
   
-public viod newGame(){
-  int x = (int)(Math.random*words.length);
+public void newGame(){
+  int x = (int)(Math.random()*word.length);
   puzzleWord = word[x];
   System.out.println("-----");
 }
 
   
 public String Guess(String guess){
-  if(guess.length != 5){
+  if(guess.length() != 5){
     return "Input a guess of the correct length";
   }
   String tot = "";
